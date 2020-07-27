@@ -89,3 +89,8 @@ function contArray() {
   var qtdArray = meuArray.length;
   alert(`O array contém ${qtdArray} registros`);
 }
+
+//cadastropessoas
+$(document).ready(function(){
+  $("#cpf").mask("999.999.999-99");
+});

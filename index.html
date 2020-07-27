@@ -9,88 +9,103 @@
     
 </head>
 <body>
-    <div class="container  align-items-center">
-        <h1 class="display-2">Exercícios</h1>
-        <div class="justify-content-between align-items-center">
-            <P>Ordernar este array em order crescente <p id="array1"></p></P>
-            
-            <form>
-                <button class="btn btn-primary" type="button" onclick="ordCresc()">Resposta</button>
-            </form>
-        </div>
+
+    <ul class="nav bg-dark">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Exercícios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="listacadastrados.html">Lista de Cadastrados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cadastropessoas.html">Cadastrar Pessoas</a>
+        </li>
+      </ul>
+
+    <main class="container" role="main">
+        <div class="starter-template align-items-center">
+            <h1 class="display-2">Exercícios</h1>
+            <div class="justify-content-between align-items-center">
+                <P>Ordernar este array em order crescente <p id="array1"></p></P>
+                
+                <form>
+                    <button class="btn btn-primary" type="button" onclick="ordCresc()">Resposta</button>
+                </form>
+            </div>
+        
+            <div class="justify-content-between align-items-center">
+                <p>Ordernar este array em order decrescente <p id="array2"></p></p>
+                <button class="btn btn-primary" type="button" onclick="ordDecresc()">Resposta</button>
+            </div>
     
-        <div class="justify-content-between align-items-center">
-            <p>Ordernar este array em order decrescente <p id="array2"></p></p>
-            <button class="btn btn-primary" type="button" onclick="ordDecresc()">Resposta</button>
-        </div>
-
-        <div>
-            <h2 class="font-italic">Contagem de Caracteres</h2>
-            <p id="longText">What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                
-                <p id="campoResposta">Resposta</p>
-                
-                <button class="btn btn-primary" type="button" onclick="contarCarac()">
-                    Mostrar Quantidade de Caracteres
-                  </button>
-        </div>
-
-        <div>
-
-            <h2 id="stringAlt" class="font-italic">O joão robou pão na casa do marcelo</h2>
-            <div class="form-group">
-                <input class="btn btn-primary" type="button" onclick="substituirSrting1()" value='Substituir a palavra "marcelo" por "joão"' />
+            <div>
+                <h2 class="font-italic">Contagem de Caracteres</h2>
+                <p id="longText">What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    
+                    <p id="campoResposta">Resposta</p>
+                    
+                    <button class="btn btn-primary" type="button" onclick="contarCarac()">
+                        Mostrar Quantidade de Caracteres
+                      </button>
             </div>
-
-            <div class="form-group">
-                <input class="btn btn-primary" type="button" onclick="substituirSrting2()" value='Substituir a palavra "pão" por "torta"' />
-            </div>
-
-            <div class="form-group">
-                <input class="btn btn-primary" type="button" onclick="removerString1()" value='Remover a palavra "joão"' />
+    
+            <div>
+    
+                <h2 id="stringAlt" class="font-italic">O joão robou pão na casa do marcelo</h2>
+                <div class="form-group">
+                    <input class="btn btn-primary" type="button" onclick="substituirSrting1()" value='Substituir a palavra "marcelo" por "joão"' />
+                </div>
+    
+                <div class="form-group">
+                    <input class="btn btn-primary" type="button" onclick="substituirSrting2()" value='Substituir a palavra "pão" por "torta"' />
+                </div>
+    
+                <div class="form-group">
+                    <input class="btn btn-primary" type="button" onclick="removerString1()" value='Remover a palavra "joão"' />
+                </div>
+                
+                <div class="form-group">
+                    <input class="btn btn-primary" type="button" onclick="removerString2()" value='Cortar as 5 primeiras letras do texto' />
+                </div>
+    
+                <div class="form-group">
+                    <input class="btn btn-primary" type="button" onclick="addString()" value='Adicionar ao final do texto a palavra " da IBRS"' />
+                </div>
+    
+                <div class="form-group">
+                    <input class="btn btn-primary" type="button" onclick="apartirCasa()" value='a partir de "casa do da IBRS..."' />
+                </div>
+    
             </div>
             
-            <div class="form-group">
-                <input class="btn btn-primary" type="button" onclick="removerString2()" value='Cortar as 5 primeiras letras do texto' />
+            <div>
+                <h2 class="font-italic">No seguinte array <p id="array"></p></h2>
+                
+                <div class="form-group">
+                    <input class="btn btn-primary" type="button" onclick="pushPalavra()" value='Adicionar a palavra "Azeite"' />
+                </div>
+    
+                <div class="form-group">
+                    <input class="btn btn-primary" type="button" onclick="removerArray1()" value='Remover a palavra "Marcelo"' />
+                </div>
+    
+                <div class="form-group">
+                    <input class="btn btn-primary" type="button" onclick="ordAlf()" value='Ordem alfabética' />
+                </div>
+    
+                <div class="form-group">
+                    <input class="btn btn-primary" type="button" onclick="contArray()" value='Registros no Array' />
+                </div>
+    
             </div>
-
-            <div class="form-group">
-                <input class="btn btn-primary" type="button" onclick="addString()" value='Adicionar ao final do texto a palavra " da IBRS"' />
-            </div>
-
-            <div class="form-group">
-                <input class="btn btn-primary" type="button" onclick="apartirCasa()" value='a partir de "casa do da IBRS..."' />
-            </div>
-
-        </div>
-        
-        <div>
-            <h2 class="font-italic">No seguinte array <p id="array"></p></h2>
             
-            <div class="form-group">
-                <input class="btn btn-primary" type="button" onclick="pushPalavra()" value='Adicionar a palavra "Azeite"' />
-            </div>
-
-            <div class="form-group">
-                <input class="btn btn-primary" type="button" onclick="removerArray1()" value='Remover a palavra "Marcelo"' />
-            </div>
-
-            <div class="form-group">
-                <input class="btn btn-primary" type="button" onclick="ordAlf()" value='Ordem alfabética' />
-            </div>
-
-            <div class="form-group">
-                <input class="btn btn-primary" type="button" onclick="contArray()" value='Registros no Array' />
-            </div>
-
         </div>
-        
-    </div>
+    </main>
     
     <script src="functions.js"></script>
 </body>
