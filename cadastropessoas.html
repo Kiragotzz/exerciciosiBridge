@@ -21,40 +21,48 @@
     </ul>
     <main class="container" role="main">
         <div id="form-container">
-  
+          <h1 class="display-2 form-group">Cadastro de Pessoa</h1>
             <div class="panel" id="form-box">
                 <form name="form" method="post">
                   <div class="form-group">
                     <label>CPF</label>
-                    <input name="cpf" type="text" id="cpf"/>
+                    <input class="form-control" name="cpf" type="text" id="cpf"/>
                   </div>
                   <div class="form-group">
                     <label>Nome</label>
-                    <input>
+                    <input class="form-control">
                   </div>
                   <div class="form-group">
                     <label>Telefone</label>
-                    <input>
+                    <input class="form-control">
                   </div>
                   <div class="form-group">
                     <label>Celular</label>
-                    <input>
+                    <input class="form-control">
                   </div>
                   <div class="form-group">
                     <label>Email</label>
-                    <input>
+                    <input class="form-control" class="e-mail">
                   </div>
                   <div class="form-group">
                     <label>Sexo</label>
-                    <input>
+                    <select class="form-control" required>
+                      <option value="pago">Feminino</option>
+                      <option value="false">Masculino</option>
+                      <option value="false">Outro</option>
+                  </select>
                   </div>
                   <div class="form-group">
                     <label>Nascimento</label>
-                    <input>
+                    <input class="form-control" type="date">
                   </div>
                   <div class="form-group">
                     <label>Habilidades</label>
-                    <input>
+                            <select class="form-control" required>
+                              <option value="pago">HTML</option>
+                              <option value="false">CSS</option>
+                              <option value="false">JavaScript</option>
+                          </select>
                   </div>
           
                   <div class="form-group">
