@@ -27,42 +27,62 @@
             </div>
 
             <form id="frmCadastro">
-              <ul>
-                <li>
-                    <label for="txtCodigo">CPF:</label>
-                    <input name="cpf" type="text" id="txtCodigo" id="cpf"/>
-                </li>
-                <li>
+              <dl>
+                <dt class="form-group">
+                    <label for="txtCpf">CPF:</label>
+                    <input class="form-control" name="cpf" type="text" id="txtCpf"/>
+                </dt>
+                <dt class="form-group">
                     <label for="txtNome">Nome:</label>
-                    <input type="text" id="txtNome"/>
-                </li>
-                <li>
+                    <input class="form-control" type="text" id="txtNome"/>
+                </dt>
+                <dt class="form-group">
                   <label for="txtTelefone">Telefone:</label>
-                  <input type="text" id="txtTelefone"/>
-                </li>
-              <li>
-                <label for="txtTelefone">Celular:</label>
-                <input type="text" id="txtTelefone"/>
-              </li>
-                <li>
-                    <label for="txtEmail">Sexo:</label>
-                    <input type="text" id="txtEmail"/>
-                </li>
-                <li>
-                  <label for="txtEmail">Email:</label>
-                  <input type="text" id="txtEmail"/>
-              </li>
-                <li>
-                    <input type="submit" value="Salvar" id="btnSalvar"/>
-                </li>
-              </ul>
+                  <input class="form-control" type="text" id="txtTelefone"/>
+                </dt>
+              <dt class="form-group">
+                <label for="txtCelular">Celular:</label>
+                <input class="form-control" type="text" id="txtCelular"/>
+              </dt>
+              <dt class="form-group">
+                <label for="txtEmail">Email:</label>
+                <input class="form-control" type="text" id="txtEmail"/>
+            </dt>
+                <dt class="form-group">
+                    <label for="txtSexo">Sexo:</label>
+                    <select class="form-control" id="txtSexo" >
+                      <option selected>Clique e selecione</option>
+                      <option>Feminino</option>
+                      <option>Masculino</option>
+                      <option>Outro</option>
+                    </select>
+                </dt>
+                <dt class="form-group">
+                  <label for="txtNasc">Nascimento:</label>
+                  <input type="date" id="txtNasc"/>
+              </dt>
+              <dt class="form-group">
+                <label for="txtHab">Habilidades:</label>
+                        
+                        <select multiple class="form-control" id="txtHab" >
+                          <option>HTML</option>
+                          <option>CSS</option>
+                          <option>JavaScript</option>
+                        </select>
+              </dt>
+              
+                <dt class="form-group">
+                    <input class="btn btn-primary" type="submit" value="Salvar" id="btnSalvar"/>
+                    <a class="btn btn-primary" href="listacadastrados.html" role="button" />Voltar</a>
+                </dt>
+              </dt>
           </form>
-      
-          <table class="table" id="tblListar">
-      
-          </table>
-    
+          
+          <div class="container">
+            <table class="table table-dark" id="tblListar">
             </table>
+          </div>
+
         </div>
     </main>
     
