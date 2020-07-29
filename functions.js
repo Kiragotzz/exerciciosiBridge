@@ -1,9 +1,13 @@
 ////Functions
 //exercício2
 var numbers1 = [1,3,4,9,5,7,2,6,20,11,12,17];
+
 var numbers2 = [1,3,4,9,5,7,2,6,15,12];
+
 document.getElementById("array1").textContent = numbers1;
+
 document.getElementById("array2").textContent = numbers2;
+
 
 function ordCresc(){
     numbers1.sort(function(a, b) {
@@ -90,7 +94,3 @@ function contArray() {
   alert(`O array contém ${qtdArray} registros`);
 }
 
-//cadastropessoas
-$(document).ready(function(){
-  $("#cpf").mask("999.999.999-99");
-});
